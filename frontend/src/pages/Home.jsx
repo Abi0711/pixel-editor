@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note";
 import "../styles/Home.css";
+import PixelCanvas from "../components/PixelCanvas";
 
 function Home() {
   const [notes, setNotes] = useState([]);
@@ -81,6 +82,7 @@ function Home() {
         <br />
         <input type="submit" value="Create Note" />
       </form>
+      <PixelCanvas />
     </div>
   );
 }
